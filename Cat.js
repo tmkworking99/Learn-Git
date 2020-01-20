@@ -8,12 +8,12 @@ function Cat(name)
 
 Cat.prototype.SayHi = function()
 {
-	console.log('I\'m a little Cat' + '.My name is ' +  chalk.red(this.Name.));
+	console.log('I\'m a little Cat' + '.My name is ' +  chalk.red(this.Name));
 }
 
 Cat.prototype.Eat = function(mouse)
 {
-	this.stomach.add(mouse);
+	this.stomach.push(mouse);
 }
 
 module.exports = Cat;  
